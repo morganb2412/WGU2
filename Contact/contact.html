@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+    <link href="../style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="../form.js"></script>
+    <title>PetWeb</title>
+    </head>
+    <body>
+        <header>
+            <header>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="../index.html">
+                    <img src="../Logo1.png" alt width="120" height="80">
+                    Paradigm Pet Professionals
+                </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../Dog/dog.html">Dogs</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../Cats/cat.html">Cats</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../small/smallAmimals.html">Small Animals</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../Contact/contact.html">Contact Us</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn nav-btn" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+            </header>  
+        </header>
+        <main>
+            <div class="form-body">
+                <div class="row">
+                    <div class="form-holder">
+                        <div class="form-content">
+                            <div class="form-items">
+                                <h3>Contact the Professionals</h3>
+                                <p>Fill in the data below.</p>
+                                <form class="requires-validation" novalidate>
+        
+                                    <div class="col-md-12">
+                                       <input class="form-control" type="text" name="name" placeholder="Full Name" required>
+                                       <div class="valid-feedback">Username field is valid!</div>
+                                       <div class="invalid-feedback">Username field cannot be blank!</div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input class="form-control" type="text" name="phone" placeholder="Contact Number" required>
+                                         <div class="valid-feedback">Text field is valid!</div>
+                                         <div class="invalid-feedback">Text field cannot be blank!</div>
+                                     </div>
+          
+        
+                                    <div class="col-md-12">
+                                        <input class="form-control" type="email" name="email" placeholder="E-mail Address" required>
+                                         <div class="valid-feedback">Email field is valid!</div>
+                                         <div class="invalid-feedback">Email field cannot be blank!</div>
+                                    </div>
+
+        
+                                   <div class="col-md-12">
+                                        <select class="form-select mt-3" required>
+                                              <option selected disabled value="">Type of Pet</option>
+                                              <option value="dog">Dog</option>
+                                              <option value="cat">Cat</option>
+                                              <option value="smallAnmial">Small Animal</option>
+                                              <option value="reptile">Reptile</option>
+                                              <option value="fish">Fish</option>
+                                       </select>
+                                        <div class="valid-feedback">You selected an animal!</div>
+                                        <div class="invalid-feedback">Please select an animal!</div>
+                                   </div>
+                                   <div class="col-md-12">
+                                    <input class="form-control" type="text" name="petname" placeholder="Pet's name" required>
+                                     <div class="valid-feedback">Text field is valid!</div>
+                                     <div class="invalid-feedback">Text field cannot be blank!</div>
+                                 </div>
+                                
+                                   <div class="col-md-12">
+                                      <input class="form-control" type="text" name="question" placeholder="Question" required>
+                                       <div class="valid-feedback">Text field is valid!</div>
+                                       <div class="invalid-feedback">Text field cannot be blank!</div>
+                                   </div>
+        
+        
+                                   <div class="col-md-12 mt-3">
+                                    <label class="mb-3 mr-1" for="timezone"> Select a Time Zone </label>
+        
+                                    <input type="radio" class="btn-check" name="timezone" id="Ct" autocomplete="off" required>
+                                    <label class="btn btn-sm btn-outline-secondary" for="timezone">CT</label>
+        
+                                    <input type="radio" class="btn-check" name="timezone" id="Et" autocomplete="off" required>
+                                    <label class="btn btn-sm btn-outline-secondary" for="timezone">ET</label>
+
+                                    <input type="radio" class="btn-check" name="timezone" id="Mt" autocomplete="off" required>
+                                    <label class="btn btn-sm btn-outline-secondary" for="timezone">MT</label>
+
+                                    <input type="radio" class="btn-check" name="timezone" id="Pt" autocomplete="off" required>
+                                    <label class="btn btn-sm btn-outline-secondary" for="timezone">PT</label>
+        
+                                    </div>
+        
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                  <label class="form-check-label">I confirm that all data are correct</label>
+                                 <div class="invalid-feedback">Please confirm that the entered data are all correct!</div>
+                                </div>
+                          
+        
+                                    <div class="form-button mt-3">
+                                        <button id="submit" type="submit" class="btn btn-primary">Register</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+              <hr class="featurette-divider">
+              <div class="container">
+              <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <p class="col-md-4 mb-0 text-muted">© 2022 Paradigm Pet</p>
+                <a href="../index.html" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                    <img src="../Logo1.png" class="bi-me" width="40" height="32">
+                </a>
+                <ul class="nav col-nd-4 justify-content-end">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link px-2 text-muted">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../Dog/dog.html" class="nav-link px-2 text-muted">Dogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./cat.html" class="nav-link px-2 text-muted">Cats</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../small/smallAmimals.html" class="nav-link px-2 text-muted">Small Animals</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="../Contact/contact.html" class="nav-link px2 text-muted">Contact Us</a>
+                    </li>
+                  </ul>
+            </footer>
+
+        </div>
+    </body>
+</html>
